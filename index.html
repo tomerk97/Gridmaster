@@ -17,16 +17,39 @@
 
 
 <div id="container" style="font-family: Montserrat;">
-	<img src="Gridlogo.png">
-	<div><br>
-		<p id="welcome" >Welcome to the Grid Master,<br> This tool will help you to create your grid layout.</p>
+	
+	<div>
+		<p id="welcome"><span>Welcome to Grid Master<br> This tool will help you to create your grid layout.</span></p>
+		<p id="howworks"> How is it works?</p>
 	</div>
 
-		<a href="main.html" style="text-decoration: none"><button id="begin">Let's Begin</button></a>
-	
-	
+		
+		<div id="layouts">
+			<p>Step 1: Choose a template</p>
+			<div id="imgs">
+				<img id="firstimg" src="temthree.png">
+				<img src="temfour.png">
+				<img src="temfive.png">
+				<img src="temsix.png">
+			</div>
+
+			<p>Step 2: Customize your template</p>
+			<div id="rangeexam">
+				<input type="range" id="rangeone">
+				<input type="range" id="rangetwo">
+
+			</div>
+
+			<p>Step 3: Generate a code</p>
+			<div id="generatecode">
+				<textarea readonly id="textone">CSS: </textarea> 
+				<textarea readonly id="texttwo">HTML: </textarea> 
+			</div>
 
 
+			<a href="main.html" style="text-decoration: none"><p id="begin">Let's Go! >>></p></a>
+		</div>
+	
 </div>
 
 </body>

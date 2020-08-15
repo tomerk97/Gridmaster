@@ -77,32 +77,109 @@ font-family: Montserrat;
 
 #container{
 	display: grid;;
-	grid-template-rows:1fr 2fr;
+	grid-template-columns:1fr;
 }
 #welcome{
+	margin-left: 4%;
+	text-align: left;
 	font-size: 3em;
 	text-shadow: 1px 2px 1px gray;
 	padding-bottom: -10em;
 }
-#begin{
-	margin-left:2%;
-	border:1px solid black;
+#welcome>span{
+	background-color: rgb(2,2,2,0.1);
+}
+#howworks{
+	margin-left: 4%;
+	font-size: 3em;
+	text-shadow: 1px 2px 1px gray;
+	padding-bottom: -10em;
+}
+
+#layouts{
+	margin-top: 1%;
+	margin-left: 7%;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 4fr 1fr 3fr 1fr 4fr 2fr;
+}
+
+#imgs{
+	display: flex;
+	margin-left: -4%;
+	width: 99.9%;
+	background-color: rgb(117, 205, 253);
+	padding-top: 1em;
+}
+#firstimg{
+	margin-left: 5%;
+}
+#imgs>img{
+	background-color: wheat;
+	border:2px solid gray;
+	width: 15em;
+	height: 15em;
+	margin-bottom: 1em;
+	margin-right: 2em;
+	border-radius: 10px;
+	cursor: pointer;
+
+}
+#imgs>img:hover{
+	transform: scale(1.2);
+}
+#rangeexam{
+	margin-left: -4%;
+	width: 100%;
+	background-color: wheat;
+}
+#rangeone{
+	margin-left: 2%;
+	margin-top: 8%;
+	width: 40%;
+	margin-right: 15%;
+}
+#rangetwo{
+	width: 40%;
+}
+#generatecode{
+	margin-left: -4%;
+	width: 100%;
 	background-color: royalblue;
-	box-shadow: 2px 2px 7px 2px gray;
-	color:white;
-	text-transform: uppercase;
-	display: block;
-	width: 14em;
-	height: 4em;
-	padding: 1em 1em;
+}
+#generatecode>textarea{
+	resize: none;
+}
+
+#textone{
+	margin-left: 3%;
+	margin-top: 5%;
+	width: 45%;
+	height: 50%;
+	margin-right: 2%;
+}
+#texttwo{
+	height: 50%;
+	width: 45%;
+}
+
+#begin{
+	margin-top: 1em;
+	margin-left:1%;
+	text-align: left;
+
+	color:royalblue;
+	font-family: Montserrat;
 	border-radius: 20px;
-	animation: fadeInOpacity 1.4s infinite;
+	animation: fadeInOpacity 2.5s infinite;
 	font-weight: bolder;
+	font-size: 2em;
 
 }
 
 #begin:hover{
-	background-color: rgb(12, 163, 255);
-	animation: none;
+   	color: orange;
+  	animation: fadeInOpacity 0.5s infinite;
+	/*animation: none;*/
 	cursor: pointer;
 }
