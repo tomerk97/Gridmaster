@@ -79,6 +79,10 @@ font-family: Montserrat;
 	display: grid;;
 	grid-template-columns:1fr;
 }
+#welcomediv{
+	background-image: url(backgroundtop.png);
+	background-size: cover;
+}
 #welcome{
 	margin-left: 4%;
 	text-align: left;
