@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Generator</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	
+</head>
+<body>
+
+
+<div id="navigator">
+	<ul id="navlist">
+		<li><h1>Grid Master</h1></li>
+		<li ><a href="index.html"><h3 id="home">Home<h3></a></li>
+	</ul>
+</div>
+
+
+	<div id="Start">
+		<div class="tab">
+		  <button  class="tablinks active" onclick="openCity(event, 'First')"><img src="First.png" class="tablogo"></button>
+		  <button class="tablinks" onclick="openCity(event, 'Second')"><img src="Second.png" class="tablogo"></button>
+		  <button class="tablinks" onclick="openCity(event, 'Third')"><p>Templates</p></button>
+		  <button class="tablinks" onclick="openCity(event, 'Fourth')"><p>Code</p></button>
+		
+		</div>
+
+		<!--------------------- First Tab --------------------------->
+		<div id="First" class="tabcontent active">
+
+			<div id="scrollbarwidth">
+				<input type="range" id="firstwidth" min="0" max="100" value="50">	
+			</div>
+
+			<div id="scrollbarheight">
+				<input type="range" id="firstheighttop" min="30" max="100" value="66" step="10">	
+					<input type="range" id="firstheightbtm" min="00" max="70" value="66" step="10">	
+			</div>
+
+			<div id="FirstCon">
+					<div class="contentblock" id="firstcontentblock">
+												<div id="firsttop">top</div>
+												<div id="firstleft">left</div>
+												<div id="firstright">right</div>
+												<div id="firstbtm">bottom</div>
+						</div>
+			</div>
+			
+		</div>
+	</div>
+
+	
+
+
+						<!--------------------- Second Tab --------------------------->
+
+
+		<div id="Second" class="tabcontent">
+
+			<div id="scrollbarwidthsecond">
+				<input type="range" id="secwidth" min="0" max="100" value="50">	
+			</div>
+
+			<div id="scrollbarheightsec">
+				<input class="slider" type="range" id="secheighttop" min="30" max="100" value="66" step="10">	
+				<input type="range" id="secheightbtm" min="00" max="70" value="66" step="10">	
+
+
+			</div>
+
+			<div id="SecCon">
+					<div class="contentblock" id="seccontentblock">
+												<div id="secleft">left</div>
+												<div id="sectop">top</div>		
+												<div id="secmid">mid</div>
+												<div id="secbtm">bottom</div>
+						</div>
+			</div>
+			
+		</div>
+						<!--------------------- Third Tab ---------------------------->
+
+		<div id="Third" class="tabcontent">
+			<div id="thirdbtns">
+				<img id="temone" class="readytems" onclick="openCity(event, 'Fourth')" src="Temtwo.png">
+				<img id="temtwo" class="readytems" onclick="openCity(event, 'Fourth')" src="Temone.png">
+
+			</div>
+			
+		</div>
+
+
+
+		<div id="Fourth" class="tabcontent">
+		<div id="codecontainer">
+				Css:
+				<textarea id="generatedcode" value="Wow" placeholder="Woooo">Code</textarea>
+			</div>
+			<div id="htmlcontainer">HTML:
+				<textarea id="generatedhtml" value="Wow" placeholder="Woooo">Code</textarea>
+			</div>
+			<div id="CopyToClipBoard">
+				<button id="CopyCss"class="BTN" onclick="copyToClipboard('css')">Copy CSS</button>
+				<button id="CopyHtml" class="BTN" onclick="copyToClipboard('html')">Copy HTML</button>
+			</div>	
+		</div>
+
+		
+
+	</div>
+
+</div>
+
+<div id="thirdcon" style="display: none">
+	<div>	
+		<div id="left">left</div>
+		<div id="mid">mid</div>
+		<div id="right">right</div>
+	</div>
+</div>
+<div id="fourthcon" style="display: none">
+	<div>	
+		<div id="left">top</div>
+		<div id="mid">mid</div>
+		<div id="right">bottom</div>
+	</div>
+</div>
+
+</body>
+<script type="text/javascript" src="main.js"></script>
+</html>

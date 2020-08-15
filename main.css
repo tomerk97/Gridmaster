@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+		
+	}	
+	100% {
+		opacity: 1;
+	}
+}
+	/*animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;*/
+html *:focus{
+outline: none;
+}
+html{
+	font-family: "Bungee";
+	cursor: default;
+}
+body{
+	margin-top: -20px;
+/*	background-image: url(Background.jpg);*/
+	background-color: white;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;	
+
+}
+#navlist{
+	
+	background-image: linear-gradient(to right,rgb(92, 140, 254), rgb(125, 180, 108)) ;
+	margin-left: -0.5em;
+	height: 50px;
+	padding-top: 10px;
+
+}
+
+li>h1, #home{
+	color:white;
+	
+	/*-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black; */
+}
+.tablogo{
+	
+	height: 3em;
+}
+#navlist>li>h1{
+	margin-top: 40px;
+	
+}
+#navlist>li, #navlist h1{
+display: inline;
+list-style-type: none;
+margin-right: 10px;
+cursor: default;
+font-family: Montserrat;
+
+
+}
+
+
+#home{
+	margin-top: 0.4em;
+	margin-right: 1em;
+	float:right;
+	font-size: 1.5em;
+	cursor: pointer;
+}
+#home:hover{
+	transform: scale(0.9);
+}
+
+.tab {
+  overflow: hidden;
+  border: 2px solid #ccc;
+  background-color: #ABD6DFFF;
+  width: 40%;
+  margin-top: -0.6em;
+  margin-left: 0em;
+  border-radius: 100px;
+
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  padding-bottom: 15px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #E7EBE0FF;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color:#7DB46CFF;
+}
+#sites{
+	background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  margin-top: -0px;
+  border: 1px solid #ccc;
+  border-top: none;
+  width: 97%;
+  background-color: #B3C7D6FF;
+  border:solid 0.05em #ccc;
+  height: 26em;
+  margin-left: 0em;
+  margin-top:0.1em;
+  border-radius: 10px;
+}
+input{
+	cursor: pointer;
+}
+#First{
+	display: grid;
+	grid-template-columns: 5fr 95fr;
+	grid-template-rows: 5fr 95fr;
+	grid-gap: 1em;
+}
+#FirstCon{
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+#firstcontentblock{
+	display: grid;
+	padding: 10px;
+	grid-template-columns: 50fr 50fr;
+	grid-template-rows: 33fr 33fr 33fr;
+	grid-gap: 1em;
+	height: 300px;
+	width: 90%;
+	background-color: rgb(220,220,220);
+	
+}
+#scrollbarwidth{
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+#firstwidth{
+	width: 90%;
+
+}
+#scrollbarheight{
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	position: absolute;
+   	top: 30%;
+   	display: grid;
+   	grid-template-rows: 1fr 1fr;	
+}
+#firstheighttop{
+
+	    -webkit-appearance: slider-vertical;
+	       transform: rotateX(180deg);
+	       margin-top: 2em;
+	       height: 10em;
+}
+#firstheightbtm{
+
+	    -webkit-appearance: slider-vertical;
+	    transform: rotateX(180deg);
+	    height: 6.2em;
+	    margin-top: 1em
+}
+#firstcontentblock>div{
+	border: 2px solid white;
+} 
+#firsttop{
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+#firstleft{	
+grid-row-start: 2;
+grid-row-end: 3;
+grid-column-start: 1;
+grid-column-end: 2;
+}
+#firstright{	
+grid-row-start: 2;
+grid-row-end: 3;
+grid-column-start: 2;
+grid-column-end: 3;
+}
+#firstbtm{	
+grid-row-start: 3;
+grid-row-end: 4;
+grid-column-start: 1;
+grid-column-end: 3;
+}
+.contentblock{
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+	grid-template-rows: 1fr 4fr;
+	border-radius: 10px;
+
+}
+
+#Second{
+	display: none;
+	grid-template-columns: 5fr 95fr;
+	grid-template-rows: 5fr 95fr;
+	grid-gap: 1em;
+}
+
+#SecCon{
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+#seccontentblock{
+	display: grid;
+	padding: 10px;
+	grid-template-columns: 50fr 50fr;
+	grid-template-rows: 33fr 33fr 33fr;
+	grid-gap: 1em;
+	height: 300px;
+	width: 90%;
+	background-color: rgb(220,220,220);
+	
+}
+.contentblock>div{
+	border: 2px solid white;
+	border-radius: 10px;
+} 
+#secleft{
+	grid-row-start: 1;
+	grid-row-end: 4;
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+#sectop{
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+#secmid{
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+#secbtm{
+	grid-row-start: 3;
+	grid-row-end: 4;
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+#secwidth{
+	width: 90%;
+
+}
+#scrollbarwidthsecond{
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+#scrollbarheightsec{
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	position: absolute;
+   	top: 30%;
+   	display: grid;
+   	grid-template-rows: 1fr 1fr;	
+}
+
+#secheighttop{
+
+	    -webkit-appearance: slider-vertical;
+	       transform: rotateX(180deg);
+	       margin-top: 2em;
+	       height: 10em;
+}
+#secheightbtm{
+
+	    -webkit-appearance: slider-vertical;
+	    transform: rotateX(180deg);
+	    height: 6.2em;
+	    margin-top: 1em
+}
+
+#Fourth{
+	display: none;
+	grid-template-columns: 2fr 2fr 1fr;
+	
+	
+}
+#generatedcode{
+	resize: none;
+	width: 80%;
+	height: 28em;
+	overflow:scroll;
+	grid-column-start:1;
+	grid-column-end:2;
+	direction: ltr;
+}
+#generatedhtml{
+	resize: none;
+	width: 80%;
+	height: 28em;
+	overflow:scroll;
+	grid-column-start:1;
+	grid-column-end:2;
+	direction: ltr;
+	text-align: inherit;
+}
+.BTN
+{
+	width: 20%;
+	height: 4em;
+	grid-column-start:3;
+	grid-column-end:4;
+	background-color: rgb(125, 180, 108);
+	border: solid 1px black;
+	border-radius: 100px;
+	box-shadow: 3px 5px 15px 2px gray;
+	cursor: pointer;
+	margin-right: 1em;
+}
+
+.BTN:hover{
+	transform: scale(1.2);
+}
+.BTN:active{
+	transform: scale(0.8);
+}
+.readytems:hover{
+	transform: scale(1.2);
+	cursor: pointer;
+
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
