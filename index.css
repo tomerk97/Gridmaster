@@ -115,6 +115,7 @@ font-family: Montserrat;
 	width: 99.9%;
 	background-color: rgb(117, 205, 253);
 	padding-top: 1em;
+	border-radius: 10px;
 }
 #firstimg{
 	margin-left: 3.5%;
@@ -137,6 +138,7 @@ font-family: Montserrat;
 	margin-left: -4%;
 	width: 100%;
 	background-color: wheat;
+	border-radius: 10px;
 }
 #rangeone{
 	margin-left: 2%;
@@ -151,6 +153,7 @@ font-family: Montserrat;
 	margin-left: -4%;
 	width: 100%;
 	background-color: royalblue;
+	border-radius: 10px;
 }
 #generatecode>textarea{
 	resize: none;
