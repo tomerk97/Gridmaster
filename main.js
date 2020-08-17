@@ -88,12 +88,10 @@ firstheighttop.addEventListener("click",function(){
   firstheighttop = document.getElementById("firstheighttop");
   firstheightbtm = document.getElementById("firstheightbtm");
   firstwidth = document.getElementById("firstwidth");
-  var a =firstheighttop.value;
-  var c = firstheightbtm.value;
-  var b = 200-a-c;
-
-  // firstheightbtm.value=100-b;
-  CurrentGrid.gridtemrow = `${a/2}fr ${b/2}fr ${c/2}fr`;
+  var a =0.40*firstheighttop.value;
+  var c = 40-(0.40*firstheightbtm.value);
+  var b = 100-(a+c);
+  CurrentGrid.gridtemrow = `${a}fr ${b}fr ${c}fr`;
   refreshGeneratedCode();
   refreshTemplate();})
 
@@ -101,10 +99,10 @@ firstheighttop.addEventListener("click",function(){
     firstheighttop = document.getElementById("firstheighttop");
     firstheightbtm = document.getElementById("firstheightbtm");
     firstwidth = document.getElementById("firstwidth");
-     var a =firstheighttop.value;
-    var c = 100-firstheightbtm.value;
-    var b = 200-a-c;
-    CurrentGrid.gridtemrow = `${a/2}fr ${b/2}fr ${c/2}fr`;
+    var a =0.40*firstheighttop.value;
+    var c = 40-(0.40*firstheightbtm.value);
+    var b = 100-(a+c);
+    CurrentGrid.gridtemrow = `${a}fr ${b}fr ${c}fr`;
     refreshGeneratedCode();
     refreshTemplate();
   })
@@ -154,23 +152,23 @@ secheighttop.addEventListener("click",function(){
   secheighttop = document.getElementById("secheighttop");
   secheightbtm = document.getElementById("secheightbtm");
   secwidth = document.getElementById("secwidth");
-  var a =secheighttop.value;
-  var c = secheightbtm.value;
-  var b = 200-a-c;
+  var a =0.40*secheighttop.value;
+    var c = 40-(0.40*secheightbtm.value);
+    var b = 100-(a+c);
 
   // firstheightbtm.value=100-b;
-  CurrentGrid.gridtemrow = `${a/2}fr ${b/2}fr ${c/2}fr`;
+  CurrentGrid.gridtemrow = `${a}fr ${b}fr ${c}fr`;
   refreshSecondGeneratedCode();
   refreshSecondTemplate();})
 
-secheightbtm.addEventListener("click",function(){ 
+  secheightbtm.addEventListener("click",function(){ 
     secheighttop = document.getElementById("secheighttop");
     secheightbtm = document.getElementById("secheightbtm");
     secwidth = document.getElementById("secwidth");
-    var a =secheighttop.value;
-    var c = 100-secheightbtm.value;
-    var b = 200-a-c;
-    CurrentGrid.gridtemrow = `${a/2}fr ${b/2}fr ${c/2}fr`;
+    var a =0.40*secheighttop.value;
+    var c = 40-(0.40*secheightbtm.value);
+    var b = 100-(a+c);
+    CurrentGrid.gridtemrow = `${a}fr ${b}fr ${c}fr`;
     refreshSecondGeneratedCode();
     refreshSecondTemplate();
   })
@@ -194,6 +192,7 @@ temtwo.addEventListener("click",function(){
   generatedcode.innerHTML = CssCodeString;
   generatedhtml.innerHTML = htmlstring.innerHTML;
 })
+
 
 
 
