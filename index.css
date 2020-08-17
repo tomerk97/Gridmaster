@@ -117,6 +117,9 @@ font-family: Montserrat;
 	padding-top: 1em;
 	border-radius: 10px;
 	justify-content:center;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: row;
 }
 #firstimg{
 	margin-left: 3.5%;
