@@ -78,7 +78,7 @@ font-family: Montserrat;
   overflow: hidden;
   border: 2px solid #ccc;
   background-color: #ABD6DFFF;
-  width: 40%;
+  width: fit-content;
   margin-top: -0.6em;
   margin-left: 0em;
   border-radius: 100px;
