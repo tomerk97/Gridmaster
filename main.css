@@ -119,10 +119,13 @@ font-family: Montserrat;
   width: 97%;
   background-color: #B3C7D6FF;
   border:solid 0.05em #ccc;
-  height: 26em;
+ 
   margin-left: 0em;
   margin-top:0.1em;
   border-radius: 10px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 input{
 	cursor: pointer;
@@ -284,7 +287,8 @@ grid-column-end: 3;
 	grid-row-end: 3;
 	grid-column-start: 1;
 	grid-column-end: 2;
-   	grid-template-rows: 1fr 1fr;		
+   	grid-template-rows: 1fr 1fr;	
+
 }
 
 #secheighttop{
