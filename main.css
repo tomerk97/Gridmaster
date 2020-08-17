@@ -110,6 +110,21 @@ font-family: Montserrat;
 }
 
 /* Style the tab content */
+/*.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  margin-top: -0px;
+  border: 1px solid #ccc;
+  border-top: none;
+  width: 97%;
+  background-color: #B3C7D6FF;
+  border:solid 0.05em #ccc;
+  height: 26em;
+  margin-left: 0em;
+  margin-top:0.1em;
+  border-radius: 10px;
+}*/
+
 .tabcontent {
   display: none;
   padding: 6px 12px;
@@ -119,7 +134,6 @@ font-family: Montserrat;
   width: 97%;
   background-color: #B3C7D6FF;
   border:solid 0.05em #ccc;
- 
   margin-left: 0em;
   margin-top:0.1em;
   border-radius: 10px;
@@ -127,13 +141,16 @@ font-family: Montserrat;
   flex-wrap: wrap;
   flex-direction: row;
 }
+
+
+
 input{
 	cursor: pointer;
 }
 #First{
 	display: grid;
 	grid-template-columns: 5fr 95fr;
-	grid-template-rows: 5fr 95fr;
+	grid-template-rows: 5fr 35fr;
 	grid-gap: 1em;
 }
 #FirstCon{
@@ -223,7 +240,7 @@ grid-column-end: 3;
 #Second{
 	display: none;
 	grid-template-columns: 5fr 95fr;
-	grid-template-rows: 5fr 95fr;
+	grid-template-rows: 5fr 35fr;
 	grid-gap: 1em;
 }
 
